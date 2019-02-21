@@ -1,2 +1,2 @@
 # Inclass3
-just double click the htmnl file to topen it in the browser. 
+just double click the html file to to pen it in the browser. 
