@@ -1,0 +1,32 @@
+<html>
+    <head>
+	<title>Inclass assignment 2</title>
+	<script type="text/javascript">
+	function temperature()
+	{
+	    var Temperature = prompt ("Enter temperature");
+		var temperaturetype = prompt ("Is the temperature in c-celcius or f-fahrenheit");
+		    if (temperaturetype == "c")
+			{
+			  var conversion = Temperature * 9/5 + 32;
+			  var temp = document.getElementById("temp");
+			  temp.innerHTML = conversion;
+			}
+			else 
+			{
+			   
+              var conversion = (Temperature -32) * 5/9;
+			  var temp = document.getElementById("temp");
+			  temp.innerHTML = conversion;
+			}
+	}
+	</script>
+	</head>
+	<body>
+	    <h2>Lab 2</h2>
+		<p>This page will prompt user to enter a temperature. Then will ask user to state wether the input is in Fahrenheit or Celsius.</p>
+		<p>Then, the program, will convert the given input into the other temperature metric; i.e. if given Fahrenheit the program will convert temperature into Celsius and vice versa</p>
+		<button type="button" onclick="temperature()">Click here to enter temperature</button> 
+		<p Id = "temp"></p>
+	</body>
+</html>
